@@ -1,5 +1,5 @@
 provider "google" {
-  credentials = "${file("${path.module}/account.json")}"
+  credentials = file("${path.module}/account.json")
   project     = "looker-evaluation"
   region      = "europe-west1"
 }
