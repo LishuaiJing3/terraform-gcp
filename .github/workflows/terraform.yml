@@ -22,7 +22,7 @@ jobs:
 
       - name: Write GCP credentials to file
         run: |
-          printf "%s" "${{ secrets.GCP_SA_KEY }}" > ./iac/account.json
+          printf "%s" "${{ secrets.GCP_TERRAFORM_DEMO }}" > ./iac/account.json
 
       - name: Set up Terraform
         uses: hashicorp/setup-terraform@v1
